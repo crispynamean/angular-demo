@@ -1,0 +1,13 @@
+<div ng-controller="chatCtrl">
+  <input type="text" ng-model="model.username" />
+  Your username is: {{model.username}}
+
+  <ul>
+    <li ng-repeat="message in model.messages">
+	  <strong>{{message.username}}</strong> {{message.timestamp}}: {{message.message}}
+	</li>
+  </ul>
+
+  <textarea ng-model="model.draft"></textarea>
+  <button ng-click="submitDraft()">Submit</button>
+</div>
