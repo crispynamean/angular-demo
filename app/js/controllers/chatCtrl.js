@@ -4,7 +4,7 @@ angular.module('angularDemo.controllers', [])
   .controller('chatCtrl',
     ['$scope', '$interval', 'chatService', function($scope, $interval, chatService) {
       $scope.model = {
-        username: "evan",
+        username: "",
         messages: [],
         draft: ""
       }
