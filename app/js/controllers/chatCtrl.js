@@ -18,6 +18,7 @@ angular.module('angularDemo.controllers', [])
         chatService.push($scope.model.username, $scope.model.draft)
         $scope.fetchMessages()
         $scope.model.draft = ""
+        console.log("another add commit push")
       }
 
       $interval($scope.fetchMessages, 1000)
