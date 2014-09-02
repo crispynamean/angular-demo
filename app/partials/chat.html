@@ -8,6 +8,6 @@
 	</li>
   </ul>
 
-  <textarea ng-model="model.draft"></textarea>
+  <textarea ng-model="model.draft" ui-keypress="{enter:'submitDraft()'}"></textarea>
   <button ng-click="submitDraft()">Submit</button>
 </div>

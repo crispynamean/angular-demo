@@ -4,7 +4,8 @@
 angular.module('angularDemo', [
   'ngRoute',
   'angularDemo.services',
-  'angularDemo.controllers'
+  'angularDemo.controllers',
+  'ui'
 ]).
 config(['$routeProvider', function($routeProvider) {
   $routeProvider.when('/', {templateUrl: 'partials/chat.html'});
